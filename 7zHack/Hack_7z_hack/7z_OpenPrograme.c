@@ -5,7 +5,7 @@
 int main(void)
 {
 	int dateMass[8];
-
+	char ConsoleString[26] = { '0' };
 	
 	for (int thirdNumber = 0; thirdNumber < 2; thirdNumber++)
 	{
@@ -26,26 +26,25 @@ int main(void)
 
 					dateMass[4] = 1; dateMass[5] = 9; dateMass[6] = 9; dateMass[7] = 1; //const
 
-					char ConsoleString[26] = { '0' };
+					
 					ConsoleString[0] = '7'; ConsoleString[1] = 'z'; ConsoleString[2] = ' '; ConsoleString[3] = 'e'; ConsoleString[4] = ' '; ConsoleString[5] = '-'; ConsoleString[6] = 'p'; //const
 
 					for (int i = 0; i <= 7; i++)
 						ConsoleString[i + 7] = dateMass[i] + '0';
 
 					ConsoleString[15] = ' '; ConsoleString[16] = 's'; ConsoleString[17] = 'e'; ConsoleString[18] = 'c'; ConsoleString[19] = 'r'; ConsoleString[20] = 'e'; ConsoleString[21] = 't'; ConsoleString[22] = '.'; ConsoleString[23] = '7'; ConsoleString[24] = 'z'; ConsoleString[25] = '\0'; //const
-					/*for (int i = 0; i < 26; i++)
+					for (int i = 0; i < 26; i++)
 					{
 						printf_s("%c", ConsoleString[i]);
 					}
-					printf_s("\n");*/
-					//exit(11);
-					if (!system(ConsoleString))
+					printf_s("\n");
+					/*if (!system(ConsoleString))
 					{
 						printf_s("Your password: ");
 						for (int i = 0; i < 8; i++)
 							printf_s("%d", dateMass[i]);
 						exit(11);
-					}
+					}*/
 						
 				}
 			}
