@@ -1,6 +1,6 @@
 #include "raylib.h"
 
-#define MAX_COLORS_COUNT 7          
+#define MAX_COLORS_COUNT 6          
 
 void Cleaning_Button(bool btnAction, int btnState, Vector2 mousePos, Rectangle btnBoundsCleaning, Rectangle colorsRecs, int colorMouseHover, RenderTexture2D target)
 {
@@ -44,7 +44,7 @@ int main(void)
     int btnState = 0;
     bool btnAction = false;
 
-    Color colors[MAX_COLORS_COUNT] = {BLACK, WHITE, RED,  BLUE, YELLOW, GREEN, PINK};
+    Color colors[MAX_COLORS_COUNT] = {BLACK, WHITE, RED,  BLUE, YELLOW, GREEN};
     Rectangle colorsRecs[MAX_COLORS_COUNT] = { 0 };
 
     for (int i = 0; i < MAX_COLORS_COUNT; i++)
